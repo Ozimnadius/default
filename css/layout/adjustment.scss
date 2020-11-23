@@ -32,22 +32,13 @@ body {
 .wrapper {
   min-height: 100vh;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "content" "footer";
+  display: flex;
+  flex-direction: column;
 }
 
-.header {
-  grid-area: header;
-}
 
 .page {
-  grid-area: content;
-}
-
-.footer {
-  grid-area: footer;
+  overflow: hidden;
 }
 
 
